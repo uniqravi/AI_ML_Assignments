@@ -46,25 +46,24 @@ DataSet and it's attributes descrption can be accessed using below link :
 
 
 ## Technologies Used
-- Python - version 3.10
-- Pandas 
-- Numpy
-- Matplotlib
-- Seaborn
+- Python - 3.10
+- Pandas - 1.5.0
+- Numpy - 1.23.3
+- Matplotlib - 3.6.0
+- Seaborn- 0.12.0
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
+
 - This project was inspired to take fair understanding of how to solve real business problem using basic EDA techniques.
 
 
 ## Contact
+
 Created by [@uniqravi] - feel free to contact me!
 
 
 <!-- Optional -->
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
