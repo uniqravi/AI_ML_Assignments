@@ -37,10 +37,18 @@ DataSet and it's attributes descrption can be accessed using below link :
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- we found out that 50% loan application belong to top 6 state out of 50 state.Name of top 6 states are the CA,NY,FL,TX,NJ,IL and 80% loan applications belong to 17 states and FL state provide most default loan and most fully paid loans are from TX state.
+- we obeserve as employement term increases, they are less likeyly to apply loan application
+- Low number of loan applications get filed in Jan month, increase as it reaches towards end of financial year. I think In Us bank likely to close maximum application before finacial year.
+- higher intrest rate loan is more likely to end up with charged off.
+- From Box plot of annual income, Q3 value of charged off loan is lower than fully paid loan. It means good income persons are more likely to close loan as fully paid.
+- From Box plot of Debt to income ratio, q1, median, and q3 having larger value in charged off loan. higher debt to income ratio is not good. 
+- loan applications of people who did not mentioned empoyee length with home ownership rent are more risky application.
+- Generally it evident that People with 'other' Home ownership are more risky no matter what they belong to any income category.
+- there is highly chance that loan application of very low income are going to be defaulter.
+- Similary people with mortage home ownership are likely to complete loan succesfully.
+- Median of installment of each category of not paying people is higher than paid off peiple.Same thing happend with third quartile. It means people each category with lower installment is more safe.
+- bigger debt to income ratio and higher number of public bankrupt means more chance to become loan defaulter.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
