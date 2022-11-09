@@ -49,6 +49,16 @@ DataSet and it's attributes descrption can be accessed using below link :
 - Similary people with mortage home ownership are likely to complete loan succesfully.
 - Median of installment of each category of not paying people is higher than paid off peiple.Same thing happend with third quartile. It means people each category with lower installment is more safe.
 - bigger debt to income ratio and higher number of public bankrupt means more chance to become loan defaulter.
+- Applicants with High DTI and low income or high bankruptcies in past or requesting high loan amount with higher EMI or lower
+tenure could be a defaulter
+- When consolidated applications as per states, customers from FL are more likely to be defaulters and on positive note customers from
+TX state are more likely to close their loans.
+- Customers who has own houses or mortgage homes are more likely to finish their loans on time, but to be vigilant on company
+financials customers who specify home ownership as other are most likely to charge off their loans no matter of their employment
+length or annual income.
+- Applications which haven’t specified their employment experience are more riskier as most of those applications are charged off.
+- When it comes with verification of applications in lending club, seems that verification process is not so perfect, because we could see
+most of the charged off loans verification is completed successfully.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
