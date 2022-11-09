@@ -1,54 +1,64 @@
-# Lending Club Case Study
-> In this project, We uses basic EDA techniques and developed a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
+# Bike Sharing Demand Forcasting
+> In this project, We have built multiple regression model to predict number of demand of bike sharing in system.
 
 
-## Table of Contents
-* [General Info](#general-information)
+## Table of Content
+* [Problem  Statement](#problem-statement)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-A consumer finance company which specialises in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
-   1. If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company </b>
-   2. If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
+## Problem Statement
 
-This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface. 
+A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
-Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). Credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. In this case, the customers labelled as 'charged-off' are the 'defaulters'. 
+In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
 
-If one is able to identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss. Identification of such applicants using EDA is the aim of this case study.
+They have contracted a consulting company to understand the factors on which the demand for these shared bikes depends. Specifically, they want to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
 
-In other words, the company wants to understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default.  The company can utilise this knowledge for its portfolio and risk assessment. 
+    - Which variables are significant in predicting the demand for shared bikes.
+    - How well those variables describe the bike demands
 
-This case study is about to solve consumer finance company problem and helping company to take decision for approval of loan application.When a person applies for a loan, there are two types of decisions that could be taken by the company: If the company approves the loan, there are 3 possible scenarios described below:
+Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors.
 
-1. Fully paid: Applicant has fully paid the loan (the principal and the interest rate)
+## Business Goal:
 
-2. Current: Applicant is in the process of paying the instalments, i.e. the tenure of the loan is not yet completed. These candidates are not labelled as 'defaulted'.
+Building the model which will predict the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 
-3. Charged-off: Applicant has not paid the instalments in due time for a long period of time, i.e. he/she has defaulted on the loan 
-    
-The dataset contains the complete loan data for all loans issued through the time period 2007 t0 2011.
-DataSet and it's attributes descrption can be accessed using below link : 
+## EDA Analysis :
 
+ - This Bike Sharing Data consists 16 columns. The 'cnt' variable indicates the total number of bike rentals, including both casual and registered.So 'cnt' has been used as target variable and dropped casual and registered columns. 
+ - Continuous Variable Analysis
+   - There are Humidity, Windseepd, Temp and Atemp are continous varible in dataset.
+   - temp and aTemp is higly linear to each other. 
+ - Categorical Varible Analysis :
+   - There is a low demand in Spring Season compared to summer, fall and winter. Generally,bike sharing demand remain high in summer and fall season.
+   - Popularity of Bike Sharing demand is increasing. Trend is visible. There is a demand increase in 2019 compared to past year 2018.
+   - From starting month to till 10th, In general demand increases then it starts to decline till Jan.
+   - Median of holiday and first Q1 is less than compared to non-holiday median and Q1.
+   - There is very low demand in snow season and no demand in heavy rainy season.
+ 
+ ## Modeling :
+ - Built Linear Regression model.
+   
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- we found out that 50% loan application belong to top 6 state out of 50 state.Name of top 6 states are the CA,NY,FL,TX,NJ,IL and 80% loan applications belong to 17 states and FL state provide most default loan and most fully paid loans are from TX state.
-- we obeserve as employement term increases, they are less likeyly to apply loan application
-- Low number of loan applications get filed in Jan month, increase as it reaches towards end of financial year. I think In Us bank likely to close maximum application before finacial year.
-- higher intrest rate loan is more likely to end up with charged off.
-- From Box plot of annual income, Q3 value of charged off loan is lower than fully paid loan. It means good income persons are more likely to close loan as fully paid.
-- From Box plot of Debt to income ratio, q1, median, and q3 having larger value in charged off loan. higher debt to income ratio is not good. 
-- loan applications of people who did not mentioned empoyee length with home ownership rent are more risky application.
-- Generally it evident that People with 'other' Home ownership are more risky no matter what they belong to any income category.
-- there is highly chance that loan application of very low income are going to be defaulter.
-- Similary people with mortage home ownership are likely to complete loan succesfully.
-- Median of installment of each category of not paying people is higher than paid off peiple.Same thing happend with third quartile. It means people each category with lower installment is more safe.
-- bigger debt to income ratio and higher number of public bankrupt means more chance to become loan defaulter.
+
+1. This case study is about to solve problem of forcasting of demand basis of given data.
+2. During EDA, we use different plots to understand distribution of data, to understand relation b/w features in term how much they are corelated to each other. also performed such activity which determines linear dependent features to target variable.
+3. Then we performed preprocessing step before start modeling. In this step we split the data into train and test and use standard scale to scale the continuous columns.
+4. In model building , initally we followed traditional methods, first we choosed all features to build model. then we varify significane label by looking at P value of each features.
+5. we use RFE to select top 17 features then we kept remvoing single feature in every try which come across below situation.
+  - Remove first high VIF and High P value.
+  - Keep Removing first Low VIF and High P value.
+  - then finally Removing high VIF and low p value.
+6. We also use adavance feature selection technique which is lasso. I know lasso can be used both purpose l1 regularization and model feature selection. I felt this model perfomed better than earlier point 5 technique.
+7. I also performed an experiment. What I found we are building model with only two value of year 2018 and 2019 to follow the trend. Big Question is that if I am Building this model for 2020 , will this model behave correctly because we do not have corresponding encode value of year 2020. So follow trend I used lag data for previous four days. because yt follows yt-1 or yt-2 or yt-3 or yt-3. 
+8. When I created model with this, these is no problem of overfit problem. Model bahaved much more correctly for test data.
+9. It is somewhat time-series analysis like breaking components into trend, seasonal and errors. 
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -59,13 +69,10 @@ DataSet and it's attributes descrption can be accessed using below link :
 - Numpy - 1.23.3
 - Matplotlib - 3.6.0
 - Seaborn- 0.12.0
+- sklearn
+- statsmodels
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-
-- This project was inspired to take fair understanding of how to solve real business problem using basic EDA techniques.
-
 
 ## Contact
 
