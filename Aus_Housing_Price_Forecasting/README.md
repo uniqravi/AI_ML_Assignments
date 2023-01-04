@@ -1,4 +1,4 @@
-# Bike Sharing Demand Forcasting
+# Housing Price Prediction
 > In this project, We have built multiple regression model to predict number of demand of bike sharing in system.
 
 
