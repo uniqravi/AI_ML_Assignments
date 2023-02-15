@@ -31,7 +31,9 @@ It is binary classfication problem and This notebook covers following topics :
 
 ## Conclustion
 
-- 
+- Total Incoming call of last month reduced by 7% to 11%, It is strogest indicator that customer is going to churn.
+- Decreasing of Last Day Recharge Amount is second strogest indicator.
+- Other Indicator are reducing total recharge amount, high gap from last recharge in month etc.
 
 ## Library Used
 - Python - 3.10
