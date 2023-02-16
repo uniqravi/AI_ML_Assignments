@@ -13,9 +13,9 @@ In this case study our main goal is to solve customer churning problem of teleco
 
 Problem statement can be defined into two parts
 
-- Since Telecom company wants to retain high valued customers. Since These customers are revenue generator, so on time prediction is very important. Company wants strategy to identify high value customer.
+- Since Telecom company wants to retain high valued customers and such customers are revenue generator, so on time prediction is very important. Company wants strategy to identify high value customer.
 
-- Company also want to know important factors which affect churning.
+- Company also want to know important factors which is strong indicator of churning.
 
 ## Notebook Contents
 
